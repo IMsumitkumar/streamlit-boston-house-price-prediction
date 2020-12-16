@@ -269,7 +269,7 @@ elif option == "Boston House Price":
 
             for i in range(len(vif["VIF"])):
                 if i >= 5:
-                    st.error("{} is not a good feature".format(i))
+                    st.error("{} is not a good feature".format(vif["Features"][i]))
         else:
             st.error("Select at least two")
 
